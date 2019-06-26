@@ -1,5 +1,4 @@
-# Table of contents
+# What's UP
 
-* [What's UP](README.md)
-* [Fuc](fuc.md)
+* [What's UP](first.md)
 

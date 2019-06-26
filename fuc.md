@@ -1,8 +1,0 @@
----
-description: but
----
-
-# Fuc
-
-why
-
