@@ -40,7 +40,7 @@ shppath = r'C:/Users/HCHO/Documents/ArcGIS/ZXKJ/point.shp'
 cursor = arcpy.da.InsertCursor(shppath,fields)
 for row in arcpy.da.SearchCursor('C:/Users/HCHO/Documents/ArcGIS/ZXKJ/car_line.shp', ["OBJECTID","SHAPE@"]):
         length = int(row[1].length)
-        for i in xrange(0, length + 10, 10): 
+        for i in xrange(0, length + 1, 1): 
             point = row[1].positionAlongLine(i)
             cursor.insertRow((row[0],point))
 ```
