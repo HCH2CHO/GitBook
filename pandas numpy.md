@@ -196,13 +196,13 @@ np.hstack((c,d),axis=0)  # 水平合并数组 c 和 d (列方式)
 （1）读取 CSV 格式的数据集
 
 ```
-pd.DataFrame.from_csv(“csv_file”)
+pd.DataFrame.from_csv("csv_file")
 ```
 
 或者：
 
 ```
-pd.read_csv(“csv_file”)
+pd.read_csv("csv_file")
 ```
 
 （2）读取 Excel 数据集
@@ -404,3 +404,13 @@ df.iloc[: , 1:3]
 #取某几行
 df.iloc[1:3, :]
 ```
+
+
+
+```python
+#修改列的顺序
+df=pd.read_csv("FILE.csv")
+cols = df.columns.tolist()
+daf=df[[cols[0],cols[3],cols[1],cols[2]]]
+```
+
