@@ -191,6 +191,10 @@ np.hstack((c,d),axis=0)  # 水平合并数组 c 和 d (列方式)
 
 # Pandas
 
+```
+pandas-profiling，一行代码生成超详细数据分析报告
+```
+
 ##### 基本数据集操作
 
 （1）读取 CSV 格式的数据集
