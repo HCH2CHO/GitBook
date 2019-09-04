@@ -48,3 +48,15 @@ source .bashrc
 --右键单击并添加新DWORD（32位），并将其命名为EnergyEstimationDisabled
 ```
 
+
+
+## 其他问题
+
+- 两台电脑ping不通，**修改防火墙相关设置**。
+
+  **步骤：**控制面板 →  系统和安全 → Windows防火墙 → 高级设置 → 入站规则 → 文件和打印机共享（回显请求 - ICMPv4-In）设置为启用。
+
+- win总是提醒更换密码，设置密码长期有效：
+
+  <https://www.windows10.pro/net-accounts-maxpwage-password-expiration/>
+

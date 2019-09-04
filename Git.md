@@ -26,3 +26,11 @@ git status  查看仓库状态
 
 https://blog.csdn.net/u012501054/article/details/79098991
 
+
+
+生成密钥
+
+```
+ssh-keygen -t rsa -C "251955986@qq.com"
+```
+
