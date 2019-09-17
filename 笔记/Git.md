@@ -34,3 +34,12 @@ https://blog.csdn.net/u012501054/article/details/79098991
 ssh-keygen -t rsa -C "251955986@qq.com"
 ```
 
+
+
+新建分支
+
+```
+git branch -a
+git checkout ParkMap
+GUI里需先create branch，再checkout branch
+```
