@@ -134,6 +134,7 @@ gp.to_csv('test1.csv')
 
 pip换源
 
+pip install spyder -i  http://mirrors.aliyun.com/pypi/simple/
 
 
 
