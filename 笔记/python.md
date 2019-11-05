@@ -130,3 +130,15 @@ gp=df.groupby('uid').size().reset_index()
 gp.to_csv('test1.csv')
 ```
 
+### pip
+
+pip换源
+
+
+
+
+spyder快捷键：<https://blog.csdn.net/weixin_41500849/article/details/80298944>
+
+spyder官网：
+
+<https://docs.spyder-ide.org/>
