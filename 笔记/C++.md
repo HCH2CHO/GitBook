@@ -11,6 +11,8 @@ std::replace (str.begin(), str.end(),",",' ');
 str.erase(std::remove(str.begin(), str.end(), '\"'), str.end());
 ```
 
+
+
 ```C++
 //split 函数
 vector<string> split(string src, string splitCharactor)  
@@ -29,6 +31,8 @@ vector<string> split(string src, string splitCharactor)
 } 
 ```
 
+
+
 ```C++
 //string2char* 函数
 char* string2char(string str,int size)
@@ -44,9 +48,12 @@ char* string2char(string str,int size)
 }
 ```
 
-- 指针，对某一地址数据修改的钥匙
 
+
+- 指针，对某一地址数据修改的钥匙
 - &引用，在C++中可以替代指针的作用，更加方便
+
+
 
 ```C++
 //将b中内容的COPY复制到a中
@@ -58,10 +65,14 @@ void *memcpy(void *dest, const void *src, size_t n);
 内存地址可按字节加，表示自己偏移
 ```
 
+
+
 > CppSqlite3_2使用：sqlite3.dll和sqlite3.h添加到工程目录下，将CppSQLite3.h 和CppSQLite3.cpp添加到工程中,在工程中添加lib。	
 > A、添加工程的头文件目录：工程---属性---配置属性---c/c++---常规---附加包含目录：加上头文件存放目录。
 > B、添加文件引用的lib静态库路径：工程---属性---配置属性---链接器---常规---附加库目录：加上lib文件存放目录。
 > C 、然后添加工程引用的lib文件名：工程---属性---配置属性---链接器---输入---附加依赖项：加上lib文件名。
+
+
 
 ```C++
 //SQlite数据库的使用
@@ -74,6 +85,8 @@ db.close();
 //查询query及blob操作见代码MIF2NDS
 ```
 
+
+
 - **char[]  如果不以‘\0’结尾会报错，所以需预留足够空间**
 
 ```C++
@@ -83,10 +96,14 @@ string -->float:
 	string str;float f=atof(str.c_str());
 ```
 
+
+
 ```C++
 vector<struct> name;
 name.push_back(one_struct);/name.emplace_back(one_struct);
 ```
+
+
 
 ```C++
 //计时
@@ -96,6 +113,8 @@ start=clock();
 end=clock();
 float time=(double)(end-start)/CLOCKS_PER_SEC;
 ```
+
+
 
 ```C++
 //IO
@@ -107,10 +126,14 @@ getline(file,str);
 flie.close();
 ```
 
+
+
 > // haiwei/calender_tool  //结构体数据初始化方法
 
 > plug-in/Eigen3   Dense矩阵运算 
 > 附加包含目录那里填上你放Eigen文件夹的位置即可
+
+
 
 ```
 //ANSI和Unicode字符串转换算法
@@ -130,6 +153,8 @@ void UnicodetoANSI(LPCWCH wszSomeString)
 }
 ```
 
+
+
 ```c++
 //CHAR与TCHAR
 CA2T();  //CHAR转TCHAR
@@ -145,6 +170,8 @@ USES_CONVERSION;
 
 wcout.imbue(locale("chs")); //表示输出时,使用的区域语言对象
 ```
+
+
 
 ```c++
 //fopen
@@ -176,6 +203,8 @@ size = ftell(fp);  //得到文件位置指针当前位置相对于文件首的�
 rewind(fp);	//将文件内部的指针重新指向一个流的开头
 ```
 
+
+
 ```c++
 //format函数
 string format(const char *pszFmt, ...)
@@ -195,9 +224,10 @@ string format(const char *pszFmt, ...)
 }
 ```
 
+
+
 - 给字符串赋值应该用双引号，单个字符的话用单引号。
 - 双引号代表字符串，会在后面加一个\0。
-
 - strlen 是一个函数，它用来计算指定字符串 str 的长度，但不包括结束字符（即 null 字符） 
 - 关键字 sizeof 是一个单目运算符,它的参数可以是数组、指针、类型、对象、函数等
 
@@ -216,7 +246,15 @@ operator=	关联指定对象的线程与当前对象
 
 
 
+##### int main( int argc, char* argv[] ) 中arg和argv参数的解析
 
-
-
-
+    argc:argument counter
+    argv:argument vector
+    
+    第一个参数，int型的argc，为整型，用来统计程序运行时发送给main函数的命令行参数的个数，在VS中默认值为1。 
+    第二个参数，char*型的argv[]，为字符串数组，用来存放指向的字符串参数的指针数组，每一个元素指向一个参数。各成员含义如下： 
+            argv[0]指向程序运行的全路径名 
+            argv[1]指向在DOS命令行中执行程序名后的第一个字符串 
+            argv[2]指向执行程序名后的第二个字符串 
+            argv[3]指向执行程序名后的第三个字符串 
+            argv[argc]为NULL 

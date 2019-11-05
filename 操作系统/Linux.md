@@ -135,6 +135,8 @@ Shift+Ctrl+V 粘贴
 CTRL + ALT + T 打开终端
 ```
 
+
+
 ## 权限问题
 
 ![img](http://tinywan-develop.oss-cn-hangzhou.aliyuncs.com/18-11-13/58024930.jpg)

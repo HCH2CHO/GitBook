@@ -2,7 +2,11 @@
 
 文档：<https://cmake.org/cmake/help/v3.15/manual/cmake.1.html>
 
+https://cmake.org/cmake/help/latest/guide/tutorial/index.html
+
 简书：<https://www.jianshu.com/p/8909efe13308>
+
+https://www.jianshu.com/p/bbf68f9ddffa
 
 ```cmake
 #CMake最低版本

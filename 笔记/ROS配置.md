@@ -1,4 +1,4 @@
-## **iau_ros_map**
+## Clion
 
 运行Clion
 
@@ -7,6 +7,41 @@
 ```
 
 
+
+添加桌面快捷方式
+
+```
+cd usr/share/applications/ 
+touch clion.desktop
+vim clion.desktop
+```
+
+
+
+修改clion快捷方式设置，注意修改Exec和Icon路径
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+
+Name=CLion
+
+Comment=clion-2018.1.1
+
+Exec=/home/sqwlly/Downloads/clion-2018.1.1/bin/clion.sh
+
+Icon=/home/sqwlly/Downloads/clion-2018.1.1/bin/clion.svg
+
+Categories=Application;Development;Java;IDE
+
+Version=2018.1.1
+
+Type=Application
+
+#Terminal=1
+```
+
+## iau_ros_map
 
 编译iau_ros_map文件
 
@@ -28,6 +63,8 @@ CMake Debug
 
 
 
+## ROS命令行
+
 查看ros版本
 
 ```
@@ -36,3 +73,10 @@ rosparam list
 rosparam get /rosdistro
 ```
 
+
+
+查看ROS环境变量
+
+```
+export | grep ROS
+```
