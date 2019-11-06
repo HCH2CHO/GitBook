@@ -4,9 +4,11 @@
 
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
-简书：<https://www.jianshu.com/p/8909efe13308>
+博客：<https://www.jianshu.com/p/8909efe13308>
 
-https://www.jianshu.com/p/bbf68f9ddffa
+https://www.jianshu.com/p/bbf68f9ddffa	源码在Cmake源文件的Help/guide/tutorial中。
+
+https://www.cnblogs.com/xianghang123/p/3556425.html
 
 ```cmake
 #CMake最低版本
@@ -16,6 +18,8 @@ project (CMakeTest)
 #执行命令
 add_executable( ${PROJECT_NAME} main.cpp)
 ```
+
+project命令会隐式地定义<projectname> _BINARY_DIR 和<projectname> _SOURCE_DIR 两个变量。PROJECT_BINARY_DIR同<projectname> _BINARY_DIR。
 
  
 
@@ -65,6 +69,8 @@ endif(WITH_LOG)
 
 target_link_libraries( ${PROJECT_NAME} ${OpenCV_LIBS} Utils)
 ```
+
+
 
 在utils子文件中写
 
