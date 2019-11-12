@@ -5,5 +5,7 @@ GitBook中包含以下内容：
 - 设计模式
 - Arcpy
 
-如果你需要留言，可以前往我的github中提issues：<https://github.com/HCH2CHO/GitBook/issues>
+如果你需要疑问，可以邮件告诉我：
+
+qyjiahcho@foxmail.com
 
