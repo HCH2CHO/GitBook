@@ -110,6 +110,14 @@ struct库：
 
 
 
+```python
+@property		#把方法『变成』了属性。
+@classmethod	#当方法中不需要访问任何实例方法和属性，纯粹地通过传入参数并返回数据的功能性方法
+@staticmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数
+
+
+```
+
 
 
 ## Jupyter Notebook
