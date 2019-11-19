@@ -24,8 +24,16 @@ catkin_make
 添加程序包到全局路径
 
 ```
-echo "source catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+```
+
+  查看路径
+
+```
+gedit ~/.bashrc
+echo $ROS_PACKAGE_PATH
+export | grep ROS
 ```
 
 ## Package 相关操作
