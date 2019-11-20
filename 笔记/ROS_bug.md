@@ -34,6 +34,16 @@ By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
 
 **Clion打开方式问题！！！**使用./clion.sh打开编译无问题。
 
-快捷方式Exec=bash -i -c "/home/zhangying/Downloads/clion/bin/clion.sh" %f
+快捷方式Exec=bash -i -c "/home/kinrua/Documents/clion/bin/clion.sh" %f
 
-解决：修改Settings->Build->CMake中的设置，修改Settings->Build->Toolchains中CMake设置。
+解决：修改Settings->Build->CMake中的设置，修改Settings->Build->Toolchains中CMake设置。该方案连续点击容易导致程序卡死，可修改环境变量export PATH=$PATH:～/Documents/clion/bin从而从终端直接启动clion.sh
+
+
+
+### 错误三：
+
+重启电脑后roscore无法运行。
+
+原因：~/.bashrc中有source /home/kinrua/catkin_ws/devel/setup.bash，影响source /opt/ros/melodic/setup.bash
+
+解决：source /opt/ros/melodic/setup.bash
