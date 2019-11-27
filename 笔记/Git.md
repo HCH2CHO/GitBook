@@ -43,3 +43,18 @@ git branch -a
 git checkout ParkMap
 GUI里需先create branch，再checkout branch
 ```
+
+
+
+### .gitignore文件
+
+<https://github.com/github/gitignore>
+
+.gitignore不起作用时：
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m 'update .gitignore'
+```
+
