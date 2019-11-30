@@ -195,3 +195,21 @@ rosbag info <bagfile_name>
 ```
 rosbag play (-r 2) <bagfile_name>
 ```
+
+查看某一话题的消息
+
+```
+rostopic echo <topic>
+```
+
+
+
+### ROSpy
+
+catkin_create_pkg  iau_ros_py  std_msgs  rospy  roscpp  iau_ros_msgs
+
+roscd  iau_ros_py
+
+mkdir scripts
+
+chmod +x example.py
