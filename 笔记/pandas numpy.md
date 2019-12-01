@@ -1,3 +1,5 @@
+numpy以行为单位索引，pandas以列为单位索引
+
 # Numpy
 
 #### 获得数组信息
@@ -102,6 +104,10 @@ np.exp(b) # [ 1.0, 2.71828183, 7.3890561 ]
 np.sqrt(b) # [ 0.0 ,  1.0, 1.41421356]
 np.floor(np.exp(b)) # [ 1.0, 2.0, 7.0 ]
 np.round(np.exp(b)) # [ 1.0, 3.0, 7.0 ]
+
+np.c_[a,b]#列合并
+np.r_[a,b]#行合并
+np.insert(a, 0, values=b, axis=1)#axis=0插入行，axis=1插入列
 ```
 
 #### 数组切片和变形
@@ -297,6 +303,8 @@ pd.to_numeric(df["feature_name"], errors='coerce')
 
 ```
 df.as_matrix()
+或
+df.values
 ```
 
 （14）取 DataFrame 的前面「n」行
