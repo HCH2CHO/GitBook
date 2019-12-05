@@ -47,3 +47,13 @@ By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
 原因：~/.bashrc中有source /home/kinrua/catkin_ws/devel/setup.bash，影响source /opt/ros/melodic/setup.bash
 
 解决：source /opt/ros/melodic/setup.bash
+
+
+
+### 错误四:
+
+rospy 编译前需要先赋予执行权限
+
+```
+chmod +x talker.py
+```
