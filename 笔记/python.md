@@ -151,3 +151,23 @@ spyder快捷键：<https://blog.csdn.net/weixin_41500849/article/details/8029894
 spyder官网：
 
 <https://docs.spyder-ide.org/>
+
+
+
+### python加速
+
+Pypy
+
+Cython
+
+```
+#优化for循环及numpy，使用循环中全局变量易出问题
+from numba import jit
+@jit
+def fun()
+```
+
+C++  调用python
+
+python 调用C++
+

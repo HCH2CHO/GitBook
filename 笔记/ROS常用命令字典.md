@@ -194,6 +194,7 @@ rosbag info <bagfile_name>
 
 ```
 rosbag play (-r 2) <bagfile_name>
+rosbag play <bagfile> --topic /topic1
 ```
 
 查看某一话题的消息
