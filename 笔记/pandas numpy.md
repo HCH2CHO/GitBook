@@ -185,7 +185,7 @@ c.reshape((3, 2)) # 将数组的形状从 (2, 3) 改为 (3, 2)
 # 增加或删除元素
 np.append(c, d) # 将 c 中元素添加到 d 数组中
 np.insert(a, 1, 5, axis=0) #  在轴 0 的索引 1 处插入 5
-np.delete(a,[1], axis=1) # 删除轴 1 索引 1 处的元素
+np.delete(a,[1], axis=1) # 删除列，索引 1 处的元素
 
 # 合并数组
 np.concatenate((c,d),axis=0)  # 合并数组 c 和 d 轴 0 上的元素
