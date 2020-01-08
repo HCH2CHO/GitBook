@@ -33,7 +33,7 @@
   * [Git](笔记/Git.md)
   * [QT](笔记/QT.md)
   * [C++](笔记/C++.md)
-  * [C++](笔记/C++关键字.md)
+  * [C++关键字](笔记/C++关键字.md)
   * [Postgres](笔记/Postgres.md)
   * [CMake](笔记/CMake.md)
   
