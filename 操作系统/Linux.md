@@ -2,6 +2,14 @@
 
 [https://github.com/linw7/Skill-Tree/blob/master/Linux%E5%B7%A5%E5%85%B7.md](https://github.com/linw7/Skill-Tree/blob/master/Linux工具.md)
 
+man +命令  查询命令使用
+
+```bash
+xinput	#查看输入
+xinput --disable 11	#关闭触摸板
+xinput --enable 11	#开启触摸板
+```
+
 ## bash
 
 `sudo -s` 切换root用户
