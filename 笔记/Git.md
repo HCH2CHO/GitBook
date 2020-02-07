@@ -44,8 +44,6 @@ git checkout ParkMap
 GUI里需先create branch，再checkout branch
 ```
 
-
-
 ### .gitignore文件
 
 <https://github.com/github/gitignore>
@@ -60,9 +58,16 @@ git commit -m 'update .gitignore'
 
 
 
-Linux
+### Linux
 
 ```
 git gui
 ```
 
+
+
+### 升级技巧
+
+```
+git clone  -b <branch> --depth=10  <ssh>  #clone某branch,10个版本记录
+```
