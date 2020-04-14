@@ -1,6 +1,8 @@
 # Windows快捷键
 
-* Ctrl+Shift+T:恢复之前网页
+* Shift+win+S 截图
+
+  Ctrl+Shift+T:恢复之前网页
 
   Fn快捷键
 
