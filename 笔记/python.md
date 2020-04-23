@@ -1,5 +1,18 @@
+### python对象
+
+python中一切变量皆为对象。
+
+python内置的一些类型中
+
+- 可变对象：list dict set  ——相当于引用
+- 不可变对象：tuple string int float bool  ——相当于真值
+
+
+
+### Tip
+
 ```python
-if __name__ == '__main__':
+if name == 'main':
 ```
 
 ```python

@@ -87,5 +87,5 @@
 
 **QGIS：**pyQGIS
 
-
+**打包库：** pyinstaller ，可打包exe、app
 
