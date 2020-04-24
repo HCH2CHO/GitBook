@@ -107,15 +107,6 @@ os.popen(‘ ’）调用命令行
 - from collections import Counter   计数
 - \  代码太长换行，;  交互端换行
 
-```
-/usr/bin/pip3
-1. from pip import __main__
-2. if name == '__main__':
-3. sys.exit(__main__._main())
-```
-
-
-
     Python中符合序列的有序序列都支持切片（slice），例如列表，字符串，元组。
     格式：【start:end:step】
     start:起始索引，从0开始，-1表示结束
@@ -139,10 +130,21 @@ struct库：
 
 ```python
 @property		#把方法『变成』了属性。
-@classmethod	#当方法中不需要访问任何实例方法和属性，纯粹地通过传入参数并返回数据的功能性方法
-@staticmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数
+使用@staticmethod或@classmethod，就可以不需要实例化，直接类名.方法名()来调用
+@staticmethod	#当方法中不需要访问任何实例方法和属性，纯粹地通过传入参数并返回数据的功能性方法
+@classmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数
 
+```
 
+### Python 配置
+
+ py --list-paths 查看所有python版本
+
+```
+/usr/bin/pip3
+1. from pip import __main__
+2. if name == '__main__':
+3. sys.exit(__main__._main())
 ```
 
 
@@ -171,7 +173,7 @@ pip换源
 
 pip install spyder -i  http://mirrors.aliyun.com/pypi/simple/
 
-
+pip -V  查看pip信息
 
 spyder快捷键：<https://blog.csdn.net/weixin_41500849/article/details/80298944>
 

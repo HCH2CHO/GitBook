@@ -17,13 +17,13 @@
 - socket网络
 - json编码
 - sqlite3数据库
-
 - string字符串操作
 - re正则表达式
 - array高效的数值数组
 - copy浅层和深层拷贝
 - enum枚举
 - csv文件读写
+- attr数据类
 
 **地震波：**obspy
 
