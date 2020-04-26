@@ -56,7 +56,7 @@ git add .
 git commit -m 'update .gitignore'
 ```
 
-
+或删除已进入当前缓冲区的文件
 
 ### Linux
 
