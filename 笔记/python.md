@@ -16,6 +16,17 @@ if name == 'main':
 ```
 
 ```python
+try:
+	pass
+except Exception as e:
+	print(e)
+finally:
+    pass
+```
+
+
+
+```python
 #python包声明
 __init__.py
 #__all__控制*所引入的模块/函数/类
@@ -108,7 +119,7 @@ os.popen(‘ ’）调用命令行
 - \  代码太长换行，;  交互端换行
 
     Python中符合序列的有序序列都支持切片（slice），例如列表，字符串，元组。
-    格式：【start:end:step】
+    格式：【start: end: step】
     start:起始索引，从0开始，-1表示结束
     end：结束索引
     step：步长，end-start，步长为正时，从左向右取值。步长为负时，反向取值
@@ -129,11 +140,11 @@ struct库：
 
 
 ```python
-@property		#把方法『变成』了属性。
+@property		#把方法『变成』了属性。鸡肋的设计，可在赋值时加入范围检查、加密处理等函数
+
 使用@staticmethod或@classmethod，就可以不需要实例化，直接类名.方法名()来调用
 @staticmethod	#当方法中不需要访问任何实例方法和属性，纯粹地通过传入参数并返回数据的功能性方法
-@classmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数
-
+@classmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数。相比于staticmethod，classmethod可以判断出自己是通过基类被调用，还是通过某个子类被调用
 ```
 
 ### Python 配置
@@ -199,4 +210,12 @@ def fun()
 C++  调用python
 
 python 调用C++
+
+
+
+#### 面向对象
+
+继承往往和多态一起使用，继承的本质是为了实现多态，不是简单的代码复用。但继承会造成代码可读性更为复杂。
+
+继承的功能可以用组合的方式实现，鸡肋的继承。
 
