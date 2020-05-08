@@ -44,28 +44,46 @@ Look Befor You Leap.
 LBYL:防御性的代码跟业务逻辑混在一块降低了可读性。利用try...excet做异常处理，而不是条件判断
 ```
 
-使用enumerate进行迭代
+- 用序列构建字符串
 
-```python
-fruits = ['orange', 'grape', 'pitaya']
-for index,fruit in enumerate(fruits):
-	print(index,':',fruit)
-```
+  ```python
+  chars = ['S', 'a', 'f', 'e']
+  name = ''.join(chars)
+  print(name) # Safe
+  ```
 
-用生成式生成列表
+- 使用enumerate进行迭代
 
-```python
-data = [7, 20, 3, 15, 11]
-result = [num *3 for num in data if num >10]
-print(result)  # [60, 45,33]
-```
+  ```python
+  fruits = ['orange', 'grape', 'pitaya']
+  for index,fruit in enumerate(fruits):
+  	print(index,':',fruit)
+  ```
 
-用zip组合键和值来创建字典
+- 用生成式生成列表
 
-```python
-keys = ['Safe', 'Bob', 'Thomas']
-values = ['Hammad', 'Builder', 'Engine']
-d = dict(zip(keys,values))
-print(d)
-```
+  ```python
+  data = [7, 20, 3, 15, 11]
+  result = [num *3 for num in data if num >10]
+  print(result)  # [60, 45,33]
+  ```
+
+- 用zip组合键和值来创建字典
+
+  ```python
+  keys = ['Safe', 'Bob', 'Thomas']
+  values = ['Hammad', 'Builder', 'Engine']
+  d = dict(zip(keys,values))
+  print(d)
+  ```
+
+- 高级循环 for...in...if
+
+  ```python
+  data = [7, 20, 3, 15, 11]
+  result = [num * 3 for num in data if num > 10]
+  print(result)  # [60, 45, 33]
+  ```
+
+  
 
