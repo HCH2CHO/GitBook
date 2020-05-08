@@ -96,12 +96,12 @@
 - 包名和模块名：snake_case、lowercase
 - 类名：CamelCase。类内部变量： lowercase
 - 异常名： CamelCase+Error
-- 全局变量名：snake_case、lowercase
+- 全局变量名：snake_case、lowercase。
 - 函数名和变量名：snake_case、lowercase
 - 函数参数和方法参数：lowercase、snake_case。self为实例方法第一个参数，clf为类方法第一个参数；不要与已有关键字冲突，可加一个后缀下划线。
 - 方法名和实例变量：snake_case
 - 常量：UPPER_CASE_WITH_UNDERSCORES、UPPERCASE
-- 下划线
+- 下划线：
 
 | 模式               | 举例    | 含义                                                         |
 | ------------------ | ------- | ------------------------------------------------------------ |
@@ -135,7 +135,7 @@
 
 - 对于string、list、tuple、dict等序列对象，用判断是否为false的方法来确定是否为空，代替len()
 
-- 不要用 == 去和True或者False比较。正确写法`if greeting: `
+- 不要用 == 去和True或者False比较。 尽可能使用隐式false ，如`if greeting: `
 
 - 不要在try...finally...语句中使用return/break/continue.因为在return/break/continue之前，finally部分会被先执行。
 
