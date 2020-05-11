@@ -4,6 +4,8 @@
 
 man +命令  查询命令使用
 
+自动屏蔽触控板:https://vitux.com/how-to-automatically-disable-touchpad-when-mouse-is-connected-to-your-ubuntu-system/
+
 ```bash
 xinput	#查看输入
 xinput --disable 11	#关闭触摸板

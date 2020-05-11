@@ -19,6 +19,7 @@ catkin_init_workspace
 ```
 cd ~/catkin_ws
 catkin_make
+catkin_make [make_targets] [-DCMAKE_VARIABLES=…]
 ```
 
 添加程序包到全局路径

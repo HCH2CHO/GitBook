@@ -81,3 +81,19 @@ rosparam get /rosdistro
 export | grep ROS
 ```
 
+
+
+## vscode下配置ROS
+
+https://blog.csdn.net/weixin_35695879/article/details/85254422
+
+修改c_cpp_properties.json中的includePath
+
+```shell
+catkin_make -DCMAKE_EXPORT_COMPILE_COMMANDS=Yes
+#这个命令会输出一个compile_commands.json文件在ROS工作空间的build文件夹下面
+#然后在c_cpp_properties.json文件添加下面一段话
+"compileCommands": "${workspaceFolder}/build/compile_commands.json"
+#workspaceFolder根据实际修改
+```
+
