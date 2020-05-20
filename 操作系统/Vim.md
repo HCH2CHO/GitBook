@@ -1,3 +1,7 @@
+# 回去重学Vim——VimTutor
+
+ https://www.runoob.com/w3cnote/all-vim-cheatsheat.html 
+
 ## 1.常规
 
 当你安装好一个编辑器后，你一定会想在其中输入点什么东西，然后看看这个编辑器是什么样子。但vim不是这样的，请按照下面的命令操作：

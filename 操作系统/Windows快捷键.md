@@ -18,7 +18,7 @@
 
   Ctrl+Z 撤销
 
-  ==Ctrl+Y 前进==
+  Ctrl+Y 前进
 
   Ctrl+S 保存
 
@@ -32,7 +32,7 @@
 
   Win+ P：演示设置
 
-  ==Win+D：显示桌面，第二次键击恢复桌面==
+  Win+D：显示桌面，第二次键击恢复桌面
 
   Win+E：打开我的电脑
 
@@ -40,9 +40,9 @@
 
   Win+M：最小化所有窗口
 
-  ==Win+A：操作中心==
+  Win+A：操作中心
 
-  ==Win+W：打开ink应用==
+  Win+W：打开ink应用
 
   Win+X：快捷菜单    +C   命令行
 
@@ -53,12 +53,12 @@
   Win+Esc：关闭放大镜
 
 
-  切换窗口：Alt + Tab（不是新的，但任务切换界面改进）。
+  切换窗口：Alt + Tab
 
-  任务视图：Win + Tab（松开键盘界面不会消失）。
+  任务视图：Win + Tab
 
-  创建新的虚拟桌面：Win + Ctrl + D。
+  创建新的虚拟桌面：Win + Ctrl + D
 
-  关闭当前虚拟桌面：Win + Ctrl + F4。
+  关闭当前虚拟桌面：Win + Ctrl + F4
 
-  切换虚拟桌面：Win + Ctrl + 左/右。
+  切换虚拟桌面：Win + Ctrl + 左/右
