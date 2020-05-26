@@ -34,6 +34,7 @@ F12进入 boot manager
 Boot Mode:UEFI
 
 ```
+#设置为绿色
 vim .bashrc
 添加PS1='\[\e[32m\]\u@\h \W#\[\e[m\] '
 source .bashrc

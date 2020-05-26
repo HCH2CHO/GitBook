@@ -10,7 +10,10 @@ https://www.jianshu.com/p/bbf68f9ddffa	源码在Cmake源文件的Help/guide/tuto
 
 https://www.cnblogs.com/xianghang123/p/3556425.html
 
-
+```
+cmake ..
+cmake --build .   /make
+```
 
 ## 说明
 

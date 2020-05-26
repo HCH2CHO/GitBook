@@ -62,3 +62,9 @@
   关闭当前虚拟桌面：Win + Ctrl + F4
 
   切换虚拟桌面：Win + Ctrl + 左/右
+
+  Terminal切换端口：Ctrl+Tab
+
+  Terminal新建标签页：Ctrl+Shift+T
+
+  Terminal关闭标签页：Ctrl+D

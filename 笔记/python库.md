@@ -87,5 +87,9 @@
 
 **QGIS：**pyQGIS
 
-**打包库：** pyinstaller ，可打包exe、app
+**打包库：** pyinstaller ，可打包exe、app。
+
+```shell
+pyinstaller.exe filename.py --hidden-import=_cffi --clean -F
+```
 

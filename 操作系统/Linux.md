@@ -136,6 +136,13 @@ iptables	控制端口
 
 
 
+默认配置文件
+
+/etc/profile
+/etc/bash.bashrc
+~/.bash_profile
+~/.bashrc
+
 ## 快捷键
 
 ```
