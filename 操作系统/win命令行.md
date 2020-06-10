@@ -1,3 +1,11 @@
+win+R 运行
+
+Ctrl + L 快速把输入焦点转移到地址栏
+
+地址栏输入wt 、cmd、powershell可在当前目录打开
+
+> 修改了配置文件中的"startingDirectory":"."  ，但会导致直接点开wt会走到exe所在目录而不是用户目录下
+
 ## Windows cmd
 
 type nul>a.csv
@@ -9,6 +17,11 @@ cd.>a.csv
  copy 文件1/b +文件2/b +……+文件n/b   文件
 
 dir  显示当前文件夹下文件
+
+```bash
+#定位到文件
+./test.sh  > log.txt 2>&1
+```
 
 ## PowerShell
 

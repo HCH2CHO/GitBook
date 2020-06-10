@@ -1,4 +1,4 @@
-### python对象
+## python对象
 
 python中一切变量皆为对象。
 
@@ -7,9 +7,7 @@ python内置的一些类型中
 - 可变对象：list dict set  ——相当于引用
 - 不可变对象：tuple string int float bool  ——相当于真值
 
-
-
-### Tip
+## Tip
 
 ```python
 if name == 'main':
@@ -33,12 +31,11 @@ __init__.py
 __all__=['a.py','b.py']
 ```
 
-- **如果全局变量是int或者str，那么如果要在函数中对其进行修改，则需先在函数内声明其为global。如果是list或者dict可直接修改**。
-- **函数中可使用全局变量，但不能对其赋值。如果赋值则该变量在函数中其表示为局部变量（函数不能修改全局变量）。当想改变其时，可使用global进行声明**
+
 
 ```python
 特殊注释
-#todo
+# TODO
 ```
 
 - os.getcwd()  获取当前路径
@@ -72,9 +69,9 @@ for root, dirs, files in os.walk(dir, topdown=True):
 
 - 字符串转列表、字典    
 
-  eval（）
+  eval()    repr()/str()
 
-- ileObject.seek(offset[, whence])
+- fileObject.seek(offset[, whence])
 
   * **offset** -- 开始的偏移量，也就是代表需要移动偏移的字节数
   * **whence：**可选，默认值为 0。给offset参数一个定义，表示要从哪个位置开始偏移；0代表从文件开头开始算起，1代表从当前位置开始算起，2代表从文件末尾算起
@@ -110,9 +107,9 @@ for root, dirs, files in os.walk(dir, topdown=True):
 numpy:a=np.array([1,2,3])  
 ```
 
-line = line.strip()  去掉头尾空白
+- line = line.strip()  去掉头尾空白
 
-os.popen(‘ ’）调用命令行
+- os.popen(‘ ’）调用命令行
 
 - 数据结构 list，dict，tuple，set
 - from collections import Counter   计数
@@ -127,9 +124,12 @@ os.popen(‘ ’）调用命令行
 通过__dict__，就可以动态的获取到对象的全部属性。
 ```
 
-"="浅拷贝问题：
+- "="浅拷贝：
+  	"="对简单变量为赋值操作，对list、dict等复杂对象为复制对象引用，即浅拷贝。
 
-​	"="对简单变量为赋值操作，对list、dict等复杂对象为复制对象引用，即浅拷贝。
+- cpoy类的深拷贝与浅拷贝：
+  	copy.copy()：不复杂对象如数值、字符串、元组可直接复制，复杂对象仍为指针形式
+    	copy.deepcopy()：被复制对象完全再复制一遍作为独立的新个体单独存在
 
 ```
 struct库：
@@ -147,7 +147,39 @@ struct库：
 @classmethod	#用它来修饰的方法，其第一个参数不是self，而是cls，也就是这个类本身作为参数。相比于staticmethod，classmethod可以判断出自己是通过基类被调用，还是通过某个子类被调用
 ```
 
-### Python 配置
+### 全局变量问题
+
+- **PEP8不鼓励在函数中修改全局变量**
+- 在函数中，当不需要对全局变量赋值时直接使用；当需要赋值时要先在函数中声明global，否则视为赋值定义局部变量。建议全局变量命名前加g_
+
+> 如果全局变量是int或者str，那么如果要在函数中对其进行修改，则需先在函数内声明其为global。如果是list、dict等复杂对象可直接修改（不建议）。
+
+> 函数中可使用全局变量，但不能对其赋值。如果赋值则该变量在函数中其表示为局部变量（函数不能修改全局变量）。当想要修改该全局变量时，可使用global在函数内进行声明（然而PEP8标准不建议修改）
+
+### socket网络
+
+https://www.cnblogs.com/aylin/p/5572104.html
+
+```python
+#线程守护，当主线程结束时，子线程会一并结束
+thread.setDaemon(True)
+
+#I/O多路复用指
+select.select()  #轮询
+ThreadingTCPServer
+selectors
+SocketServer
+
+#端口复用。端口复用前需要先close()，否则会收不到数据
+sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+#阻塞式多线程占用资源
+#select 效率较低
+
+
+```
+
+## Python 配置
 
  py --list-paths 查看所有python版本
 
@@ -178,11 +210,13 @@ gp=df.groupby('uid').size().reset_index()
 gp.to_csv('test1.csv')
 ```
 
-### pip
+## pip
 
 pip换源
 
-pip install spyder -i  http://mirrors.aliyun.com/pypi/simple/
+临时：pip install spyder -i  https://mirrors.aliyun.com/pypi/simple/
+
+永久：pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
 pip -V  查看pip信息
 
@@ -194,7 +228,7 @@ spyder官网：
 
 
 
-### python加速
+## python加速
 
 Pypy
 
@@ -215,7 +249,7 @@ python 调用C++
 
 
 
-#### 面向对象
+## 面向对象
 
 继承往往和多态一起使用，继承的本质是为了实现多态，不是简单的代码复用。但继承会造成代码可读性更为复杂。
 
@@ -223,7 +257,7 @@ python 调用C++
 
 
 
-### 关于python的吐槽
+## 关于python的吐槽
 
 python用于工程项目当中确实蛮麻烦。
 

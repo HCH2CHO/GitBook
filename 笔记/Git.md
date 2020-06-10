@@ -72,3 +72,66 @@ git gui
 git clone  -b <branch> --depth=10  <ssh>  #clone某branch,10个版本记录
 ```
 
+配置meld
+
+```
+git config --global merge.tool meld
+git config --global mergetool.meld.path "/c/Program Files (x86)/Meld/Meld.exe"
+```
+
+
+
+git  主分支修改时，子分支从主分支拉取命令。
+
+无代码冲突时：
+
+```
+git pull <远程主机名> <远程分支名>:<本地分支名>
+```
+
+有冲突时：
+
+```
+切换到master，先git pull origin master
+再local merge
+利用meld修改冲突
+git commit之前use local version
+```
+
+
+
+冲突符号讲解：
+
+```
+<<<<<<< HEAD
+b789
+=======
+b45678910
+>>>>>>> 6853e5ff961e684d3a6c02d4d06183b5ff330dcc
+
+head 到 =======里面的b789是本地上传的commit的内容
+=========到 >>>>68的是下拉的内容
+```
+
+
+
+更新同步分支
+
+```
+git reset --hard origin/planning
+```
+
+
+
+```git
+#当代码未提交时，用stash先暂时存储
+git stash
+git stash pop
+
+#回退到代码分支位置，加入分支代码
+git fetch
+git rebase origin/master
+```
+
+
+
