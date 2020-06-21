@@ -6,6 +6,8 @@ Ctrl + L 快速把输入焦点转移到地址栏
 
 > 修改了配置文件中的"startingDirectory":"."  ，但会导致直接点开wt会走到exe所在目录而不是用户目录下
 
+通过\ \wsl$进入Ubuntu目录
+
 ## Windows cmd
 
 type nul>a.csv
@@ -73,4 +75,14 @@ source .bashrc
 - win总是提醒更换密码，设置密码长期有效：
 
   <https://www.windows10.pro/net-accounts-maxpwage-password-expiration/>
+
+- 网络配置文件的公用和专用
+
+  公用：其他电脑不可访问
+
+  专用：其他电脑可访问。
+
+  在计算机管理-本地用户，文件夹-共享-高级共享里设置，高级共享设置，分别设置guest用户、访问的文件夹和权限、是否需要密码。
+
+  > 如果本地用户和访问用户的用户名、密码一致，可以直接进入不需要密码。
 

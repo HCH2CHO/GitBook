@@ -90,6 +90,6 @@
 **打包库：** pyinstaller ，可打包exe、app。
 
 ```shell
-pyinstaller.exe filename.py --hidden-import=_cffi --clean -F
+pyinstaller filename.py --hidden-import=_cffi --clean -F
 ```
 
