@@ -192,9 +192,7 @@ chmod 命令是用于改变文件或目录的访问权限。
 
 
 
-换阿里源
-
-sudo vi /etc/apt/sources.list 
+##### 系统换阿里源sudo vi /etc/apt/sources.list 
 
 ```
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
@@ -211,5 +209,27 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted unive
 
 
 
+##### pip换阿里源
 
+```
+mkdir ~/.pip
+vim ~/.pip/pip.conf
+
+文件中写入
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+ 
+[install]
+trusted-host=mirrors.aliyun.com
+```
+
+
+
+##### 切换英文路径
+
+```
+export LANG=en_US
+xdg-usr-dirs-gtk-update
+export LANG=zh_CN
+```
 
