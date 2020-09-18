@@ -93,3 +93,6 @@
 pyinstaller filename.py --hidden-import=_cffi --clean -F
 ```
 
+**运行性能**：dis模块、timeit模块
+
+**虚拟环境：**virtualenv & venv & pipenv

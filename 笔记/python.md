@@ -224,6 +224,18 @@ pip换源
 
 永久：pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 
+- Windows: C:\Users\xxx\pip\pip.ini
+
+- Linux: ~/.pip/pip.cof
+
+- 配置文件格式：
+
+  [global]
+
+  index-url =  https://mirrors.aliyun.com/pypi/simple/
+
+
+
 pip -V  查看pip信息
 
 spyder快捷键：<https://blog.csdn.net/weixin_41500849/article/details/80298944>
