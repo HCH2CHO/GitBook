@@ -263,13 +263,13 @@ operator=	关联指定对象的线程与当前对象
 
 **添加动态链接库**
 
-①选择x86/x64平台
+①选择Release/Debug，x86/x64平台
 
 ②VC++  包含目录Include、库目录dll/lib文件。
 
 ③链接器-输入-附加依赖项lib文件。或者在源代码中加入指令#pragma comment(lib,"XX.lib")
 
-④C-预处理器-预处理器定义
+④C/C++-预处理器-预处理器定义
 
 - 独立运行.exe程序时须将.dll文件放到同一目录下
 
@@ -277,4 +277,8 @@ operator=	关联指定对象的线程与当前对象
 - 动态库dll:lib包含了函数所在的dll和dll中函数位置的入口信息,代码由运行时加载在进程空间中的dll提供。
 
 
+
+屏蔽warning
+
+#pragma warning(disable:4996)
 

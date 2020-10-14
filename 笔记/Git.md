@@ -86,7 +86,8 @@ git  主分支修改时，子分支从主分支拉取命令。
 无代码冲突时：
 
 ```
-git pull <远程主机名> <远程分支名>:<本地分支名>
+git pull <远程主机名> <远程分支>:<本地分支>
+git push <远程主机名> <本地分支>:<远程分支>
 ```
 
 有冲突时：
@@ -134,4 +135,69 @@ git rebase origin/master
 ```
 
 
+
+```
+#修改密码后无法push
+git config --system --unset credential.helper
+git config --global credential.helper store
+```
+
+
+
+```
+#查看所有分支
+git branch -a
+
+#创建并切换到本地某分支，跟踪远程某分支
+git checkout -b 本地新建的分支名 origin/线上分支名
+
+#查看当前本地分支
+git branch
+
+#本地分支间切换
+git checkout <分支名>
+
+git branch --track test origin/master
+```
+
+
+
+```
+#git拉取其他分支并且合并代码
+
+1.先提交一波  为后续切分支准备
+(xxx1为自己的分支  xxx2为想要拉取的分支)
+git add .
+git commit -m 'yyy'
+git push origin xxx1
+
+2.然后git切换到你所要拉取的分支xxx2  拉取该分支代码
+git checkout xxx2
+git pull origin xxx2 或者git fetch origin xxx2
+
+3.切回自己的分支
+git checkout xxx1
+git merge xxx2
+```
+
+
+
+```
+#在本地移除远程已删除的分支
+git remote prune
+```
+
+```
+git pull origin master --allow-unrelated-histories
+git merge origin master --allow-unrelated-histories
+```
+
+
+
+```
+#配置meld
+git config --global merge.tool meld
+git config --global mergetool.meld.path "d:/Meld/Meld.exe"
+git mergetool
+```
 

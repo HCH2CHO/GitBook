@@ -44,7 +44,38 @@ connect(sender, signal, receiver, slot);
 
  method：接收对象在接收到信号之后所需要调用的函数
 
-
 例：self.connect(lcdRange, QtCore.SIGNAL("valueChanged(int)"), previousRange.setValue)
 这条语句作用是把我们定义的LCDRange的对象进行信号和槽连接。
 这时connect只有三个参数，第一个是发送这个信号的对象，第二个是要发送的信号，第三个是接收信号的槽。
+
+
+
+### 相对路径
+
+./  表示当前路径，相对于**工作目录**的路径。通常指Qt自动生成的目录，而不是其中的debug目录。
+
+:/  表示资源文件路径，对资源的引用，见.qrc文件。
+
+
+
+### UI
+
+.exec()是一个循环时间函数
+
+
+
+### **踩过的坑**
+
+需要MinGW、MSVC2019混合编译
+
+Debug没过，Release版本通过
+
+
+
+### 打包
+
+打开Qt 5.15 MSVC2019 64-bit
+
+cd  /d  <目标文件夹/release>
+
+windeployqt  <程序名>
