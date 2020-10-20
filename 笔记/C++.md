@@ -282,3 +282,6 @@ operator=	关联指定对象的线程与当前对象
 
 #pragma warning(disable:4996)
 
+
+
+C++中数字计算全用double或全用int，避免因编译器问题导致计算错误或者精度损失这种无畏的错误。

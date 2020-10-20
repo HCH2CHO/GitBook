@@ -188,16 +188,22 @@ git remote prune
 ```
 
 ```
+#提示unrelated-histories
 git pull origin master --allow-unrelated-histories
 git merge origin master --allow-unrelated-histories
 ```
-
-
 
 ```
 #配置meld
 git config --global merge.tool meld
 git config --global mergetool.meld.path "d:/Meld/Meld.exe"
 git mergetool
+```
+
+
+
+```
+#合并分支
+
 ```
 

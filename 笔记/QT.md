@@ -70,12 +70,37 @@ connect(sender, signal, receiver, slot);
 
 Debug没过，Release版本通过
 
+##### 一个bug
 
+![image-20201015142723327](C:\Users\jiaqy11\AppData\Roaming\Typora\typora-user-images\image-20201015142723327.png)
+
+当有这行注释时我的gpstime存不进去数据？？？TMD
+
+经查证，这是由于**CRLF和LF换行符**导致的问题！！！真是活久见。
+
+MSVC编译器应使用CRLF格式
 
 ### 打包
 
 打开Qt 5.15 MSVC2019 64-bit
 
-cd  /d  <目标文件夹/release>
+cd  /d  <构建目录/release>
 
 windeployqt  <程序名>
+
+
+
+### 格式转换
+
+QString转换String
+
+```
+string s = qstr.toStdString();
+```
+
+String转换QString
+
+```
+QString qstr2 = QString::fromStdString(s);
+```
+
