@@ -162,7 +162,7 @@ git branch --track test origin/master
 
 
 
-```
+```bash
 #git拉取其他分支并且合并代码
 
 1.先提交一波  为后续切分支准备
@@ -202,8 +202,25 @@ git mergetool
 
 
 
-```
+```bash
 #合并分支
+#利用Merge Requests，有冲突时会提示方法.实例如下
+#Step 1. Fetch and check out the branch for this merge request
+git fetch origin
+git checkout -b development origin/development
+#Step 2. Review the changes locally
+#Step 3. Merge the branch and fix any conflicts that come up
+git fetch origin
+git checkout origin/development
+git merge --no-ff feature/ui (--allow-unrelated-histories)
+#Step 4. Push the result of the merge to GitLab
+git push origin HEAD:development
+```
 
+
+
+```
+#打标签
+git tag -a  -m
 ```
 
