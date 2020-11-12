@@ -285,3 +285,23 @@ operator=	关联指定对象的线程与当前对象
 
 
 C++中数字计算全用double或全用int，避免因编译器问题导致计算错误或者精度损失这种无畏的错误。
+
+
+
+##### 宏定义：
+
+**#ifndef A_H**意思是"if not define a.h" 如果不存在a.h
+
+接着的语句应该 **#define A_H** 就引入a.h
+
+最后一句应该写 **#endif** 否则不需要引入
+
+**#else**
+
+
+
+
+
+**模板类 template < typename T >**
+
+template是声明一个模板，typename是声明一个虚类型T，这个T可以代替int、double等基本数据类型

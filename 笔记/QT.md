@@ -70,6 +70,8 @@ connect(sender, signal, receiver, slot);
 
 Debug没过，Release版本通过
 
+需要关闭“项目”里的shadow build
+
 ##### 一个bug
 
 ![image-20201015142723327](C:\Users\jiaqy11\AppData\Roaming\Typora\typora-user-images\image-20201015142723327.png)
@@ -104,3 +106,17 @@ String转换QString
 QString qstr2 = QString::fromStdString(s);
 ```
 
+
+
+### Pro头文件
+
+```
+#定义变量
+PCL_DIR = "D:/PCL 1.11.0"
+$${PCL_DIR}
+
+#cJson类库
+INCLUDEPATH += $$PWD/thirdparty/json
+DEPENDPATH += $$PWD/thirdparty/json
+然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
+```

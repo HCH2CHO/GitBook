@@ -124,6 +124,12 @@ git reset --hard origin/planning
 
 
 
+git rebase -i HEAD~2   将本地的多次提交合并为一个，以简化提交历史。
+
+git rebase master 将master最新的分支同步到本地
+
+
+
 ```git
 #当代码未提交时，用stash先暂时存储
 git stash
@@ -223,4 +229,20 @@ git push origin HEAD:development
 #打标签
 git tag -a  -m
 ```
+
+
+
+##### git merge和git merge --no-ff的区别：
+
+git merge --ff ：fast-forward，git reset HEAD^ --hard 回退时退到merge分支
+
+git merge --no-ff ：git reset HEAD^ --hard回退时退到主分支
+
+
+
+**git  rebase**
+
+Git rebase 的中文名是变基，就是改变一次提交记录的base。可以使合并后的记录更简洁，问题搁置。
+
+
 
