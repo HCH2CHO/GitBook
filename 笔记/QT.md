@@ -120,3 +120,9 @@ INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
 ```
+
+
+
+### 注释
+
+/** 或使用Snippets注释，仅能在函数头前触发
