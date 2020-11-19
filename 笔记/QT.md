@@ -108,6 +108,37 @@ QString qstr2 = QString::fromStdString(s);
 
 
 
+
+### 快捷键
+
+添加注释：/**
+
+snippets：Tool->Option中的Text Editor->Completion 里的 "Activate completion"，然后可在目标位置触发
+
+F1     查看帮助
+
+F2     跳转到函数定义（和Ctrl+鼠标左键一样的效果）
+
+Shift+F2  声明和定义之间切换
+
+F4     头文件和源文件之间切换
+
+Ctrl+Space  自动补全（貌似会和输入法的切换冲突）
+
+Alt(按住)+ Enter  将光标移动到h文件中的方法声明。按Alt(按住),再按回车键将在cpp中添加该函数的定义。
+
+Ctrl+I     自动对齐
+
+Ctrl+/     注释行，取消注释行
+
+F5        开始调试
+Shift+F5  停止调试
+F10      单步前进
+F11      单步进入函数
+Shift + F11 单步跳出函数
+
+Ctrl + Shift + R 修改变量名,并应用到所有使用该变量的地方
+
 ### Pro头文件
 
 ```
@@ -120,9 +151,3 @@ INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
 ```
-
-
-
-### 注释
-
-/** 或使用Snippets注释，仅能在函数头前触发
