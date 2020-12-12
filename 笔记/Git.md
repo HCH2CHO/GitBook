@@ -150,7 +150,13 @@ git config --global credential.helper store
 
 
 
-```
+查看连接关系
+
+git remote show origin
+
+
+
+```bash
 #查看所有分支
 git branch -a
 
@@ -163,6 +169,10 @@ git branch
 #本地分支间切换
 git checkout <分支名>
 
+#本地分支连接远程分支
+git branch --set-upstream-to=origin/name
+
+#建立本地test并连接远程分支
 git branch --track test origin/master
 ```
 
