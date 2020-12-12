@@ -123,9 +123,9 @@ Shift+F2  声明和定义之间切换
 
 F4     头文件和源文件之间切换
 
-Ctrl+Space  自动补全（貌似会和输入法的切换冲突）
+Ctrl+Space  自动补全（貌似会和输入法的切换冲突）我修改为Ctrl+Shit+Space
 
-Alt(按住)+ Enter  将光标移动到h文件中的方法声明。按Alt(按住),再按回车键将在cpp中添加该函数的定义。
+Alt(按住)+ Enter  将在cpp中添加该函数的定义。
 
 Ctrl+Tab   上一个文件
 
@@ -140,8 +140,6 @@ Ctrl+F
 Ctrl+Shift+F
 
 Ctrl+,   Ctrl+.   切换书签
-
-Alt+回车   自动引入include
 
 F5        开始调试
 Shift+F5  停止调试
