@@ -161,3 +161,9 @@ INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
 ```
+
+
+
+Qt中std::cout必须加std::endl，否则需要等到cout的缓冲区满之后，才向终端输出内部的字符串。
+
+有时会和QTextStream的cout、cin冲突了，所以不用using namespace std 改用std::cout。
