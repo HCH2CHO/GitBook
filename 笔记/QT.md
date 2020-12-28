@@ -160,6 +160,8 @@ $${PCL_DIR}
 INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
+
+LIBS+  可以引入dll路径
 ```
 
 
