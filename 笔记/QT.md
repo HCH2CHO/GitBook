@@ -123,13 +123,23 @@ Shift+F2  声明和定义之间切换
 
 F4     头文件和源文件之间切换
 
-Ctrl+Space  自动补全（貌似会和输入法的切换冲突）
+Ctrl+Space  自动补全（貌似会和输入法的切换冲突）我修改为Ctrl+Shit+Space
 
-Alt(按住)+ Enter  将光标移动到h文件中的方法声明。按Alt(按住),再按回车键将在cpp中添加该函数的定义。
+Alt(按住)+ Enter  将在cpp中添加该函数的定义。
+
+Ctrl+Tab   上一个文件
 
 Ctrl+I     自动对齐
 
+Ctrl+L    跳转到某行
+
 Ctrl+/     注释行，取消注释行
+
+Ctrl+F
+
+Ctrl+Shift+F
+
+Ctrl+,   Ctrl+.   切换书签
 
 F5        开始调试
 Shift+F5  停止调试
@@ -150,9 +160,9 @@ $${PCL_DIR}
 INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
+
+LIBS+  可以引入dll路径
 ```
-
-
 
 如果不指定路径，或者进行隐式链接，Windows将遵循下面的搜索顺序来寻找DLL文件的位置：
 （1）包含该应用程序EXE文件的目录
@@ -160,3 +170,9 @@ DEPENDPATH += $$PWD/thirdparty/json
 （3）Windows系统目录
 （4）Windows目录
 （5）列在Path环境变量中的一系列目录
+
+
+
+Qt中std::cout必须加std::endl，否则需要等到cout的缓冲区满之后，才向终端输出内部的字符串。
+
+有时会和QTextStream的cout、cin冲突了，所以不用using namespace std 改用std::cout。

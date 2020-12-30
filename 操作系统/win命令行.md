@@ -40,6 +40,12 @@ ubuntu1804.exe config --default-user root
 
 `powercfg /batteryreport` 生成电量情况
 
+- 拷贝数据到远程服务器
+
+```
+scp .\lasdata.zip root@207.246.82.110:/home
+```
+
 
 
 F2进入  bios
