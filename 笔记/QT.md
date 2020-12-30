@@ -151,3 +151,12 @@ INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
 ```
+
+
+
+如果不指定路径，或者进行隐式链接，Windows将遵循下面的搜索顺序来寻找DLL文件的位置：
+（1）包含该应用程序EXE文件的目录
+（2）工程目录
+（3）Windows系统目录
+（4）Windows目录
+（5）列在Path环境变量中的一系列目录
