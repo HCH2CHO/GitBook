@@ -72,6 +72,8 @@ Debug没过，Release版本通过
 
 需要关闭“项目”里的shadow build
 
+函数跳转太慢：依次打开Qt Creator的菜单 `帮助→关于插件`，然后在插件列表中搜索 ClangCodeMode，然后取消Load的勾选，重启Qt Creator
+
 ##### 一个bug
 
 ![image-20201015142723327](C:\Users\jiaqy11\AppData\Roaming\Typora\typora-user-images\image-20201015142723327.png)
@@ -161,7 +163,7 @@ INCLUDEPATH += $$PWD/thirdparty/json
 DEPENDPATH += $$PWD/thirdparty/json
 然后在工程中加入对应的h,cpp文件,有点鸡肋的一个步骤
 
-LIBS+  可以引入dll路径
+LIBS+  可以引入dll路径。编译器会在静态lib库目录下寻找dll
 ```
 
 
@@ -169,3 +171,7 @@ LIBS+  可以引入dll路径
 Qt中std::cout必须加std::endl，否则需要等到cout的缓冲区满之后，才向终端输出内部的字符串。
 
 有时会和QTextStream的cout、cin冲突了，所以不用using namespace std 改用std::cout。
+
+
+
+Profile 模式：可调试的release模式，性能较release有优化
