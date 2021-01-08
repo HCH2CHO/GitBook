@@ -305,3 +305,9 @@ C++中数字计算全用double或全用int，避免因编译器问题导致计�
 **模板类 template < typename T >**
 
 template是声明一个模板，typename是声明一个虚类型T，这个T可以代替int、double等基本数据类型
+
+
+
+ofstream  输入会将/n转换为/r/n，因此在读入/r/n后输出时会生成为/r/r/n
+
+[(1条消息) 使用ofstream输出数据时令人暴寒的错误！0A = 0D 0A？_weixin_33716941的博客-CSDN博客](https://blog.csdn.net/weixin_33716941/article/details/91816333)

@@ -235,13 +235,6 @@ git push origin HEAD:development
 
 
 
-```
-#打标签
-git tag -a  -m
-```
-
-
-
 ##### git merge和git merge --no-ff的区别：
 
 git merge --ff ：fast-forward，git reset HEAD^ --hard 回退时退到merge分支
@@ -255,4 +248,17 @@ git merge --no-ff ：git reset HEAD^ --hard回退时退到主分支
 Git rebase 的中文名是变基，就是改变一次提交记录的base。可以使合并后的记录更简洁，问题搁置。
 
 
+
+### Tag
+
+`git tag` 查看本地tag
+
+`git tag -a  -m`  #打标签
+
+```
+#删除本地tag，同步远程
+git tag -l | xargs git tag -d
+git fetch origin --prune
+git fetch origin --tags
+```
 
