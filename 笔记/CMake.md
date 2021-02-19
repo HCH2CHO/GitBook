@@ -4,25 +4,34 @@
 
 https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 
+[CMake 入门实战 | HaHack](https://www.hahack.com/codes/cmake/)
+
 博客：<https://www.jianshu.com/p/8909efe13308>
 
 https://www.jianshu.com/p/bbf68f9ddffa	源码在Cmake源文件的Help/guide/tutorial中。
 
-https://www.cnblogs.com/xianghang123/p/3556425.html
-
-```
-cd build目录
+```bash
+#默认编译器编译
+mkdir build
+cd build
 cmake ..
-cmake --build .   或make
+cmake --build .
 ```
+
+```bash
+#选择mingw编译
+cmake .. -G "MinGW Makefiles"
+mingw32-make
+```
+
+
 
 ## 说明
 
+- CMake 不区分大小写
 - project命令会隐式地定义<projectname> _BINARY_DIR 和<projectname> _SOURCE_DIR 两个变量。PROJECT_BINARY_DIR同<projectname> _BINARY_DIR。
-
 - ${} 表示变量
 - set()和list(append )作用相同，设置变量
-
 - target_include_directories(<target>  <INTERFACE|PUBLIC|PRIVATE>  [item])  包括头文件查找目录
 
 ## 来自教程
@@ -30,9 +39,11 @@ cmake --build .   或make
 1.基础
 
 ```cmake
-cmake_minimum_required (VERSION 2.6)
-project (Tutorial)
-add_executable(Tutorial tutorial.cxx)
+cmake_minimum_required(VERSION 3.10)
+# set the project name
+project(Tutorial)
+# add the executable
+add_executable(Tutorial0 tutorial.cxx)
 ```
 
 2.添加头文件

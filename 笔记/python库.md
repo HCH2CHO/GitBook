@@ -90,7 +90,7 @@
 **打包库：** pyinstaller ，可打包exe、app。
 
 ```shell
-pyinstaller filename.py --hidden-import=_cffi --clean -F
+pyinstaller filename.py --hidden-import=_cffi --clean -F --noconsole
 ```
 
 **运行性能**：dis模块、timeit模块
