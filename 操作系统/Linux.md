@@ -63,11 +63,14 @@ jupyter notebook --allow-root --port 8000 &
 
 ```
 netstat -tunlp 查看端口占用情况
+netstat -aptn  查看开放端口
 ```
 
 ```
 telnet  [ip] 22  查看某端口连接情况
 ```
+
+ifconfig -a  查看本机ip
 
 lsof -i:8000  查看某端口
 

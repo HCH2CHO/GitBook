@@ -183,3 +183,26 @@ Qt中std::cout必须加std::endl，否则需要等到cout的缓冲区满之后�
 
 
 Profile 模式：可调试的release模式，性能较release有优化
+
+
+
+### linux环境安装QT
+
+step1:  找到qtcreator,运行` ./qtcreator`
+
+step2: qt.qpa.plugin:Could not load the Qt platform plugin “xcb“报错
+
+见https://www.jb51.net/article/193024.htm
+
+```
+sudo apt-get install libxcb-xinerama0
+```
+
+step3:error: cannot find -lGL
+
+见https://blog.csdn.net/u010058695/article/details/100706039
+
+```
+sudo apt-get install libgl1-mesa-dev
+sudo ln -s /usr/lib/x86_64-linux-gnu/libGL.so.1 /usr/lib/libGL.so
+```
