@@ -88,9 +88,10 @@ MSVC编译器应使用CRLF格式
 
 打开Qt 5.15 MSVC2019 64-bit
 
+```
 cd  /d  <构建目录/release>
-
 windeployqt  <程序名>
+```
 
 
 
