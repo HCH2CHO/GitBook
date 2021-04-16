@@ -42,4 +42,13 @@
   * [Windows快捷键](操作系统/Windows快捷键.md)
   * [Linux](操作系统/Linux.md)
   * [Vim](操作系统/Vim.md)
+  * [VS](操作系统/VS.md)
+  * [Typora](操作系统/Typora.md)
+  * [Spyder](操作系统/spyder.md)
 
+- 代码规范
+  - [Google Style](代码规范/Google Style.md)
+  - [PEP8](代码规范/PEP8.md)
+  - [Python Style](代码规范/Python Style.md)
+  - [一些经验](代码规范/一些经验.md)
+  - [代码规范](代码规范/代码规范.md)

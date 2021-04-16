@@ -5,6 +5,7 @@ git config --global user.name "runoob"
 git config --global user.email test@runoob.com
 ```
 
+- 长期存储密码  git config --global credential.helper store
 - 提交、创建新版本  `git commit`
 - 建立远程分支   `git clone`
 - 从远程获取数据，更新本地的远程分支  `git fetch`

@@ -1,3 +1,11 @@
+### Linux换源
+
+**务必备份**！
+
+https://www.jianshu.com/p/20f2186d9cbb
+
+
+
 ##### Linux工具
 
 [https://github.com/linw7/Skill-Tree/blob/master/Linux%E5%B7%A5%E5%85%B7.md](https://github.com/linw7/Skill-Tree/blob/master/Linux工具.md)
@@ -63,11 +71,14 @@ jupyter notebook --allow-root --port 8000 &
 
 ```
 netstat -tunlp 查看端口占用情况
+netstat -aptn  查看开放端口
 ```
 
 ```
 telnet  [ip] 22  查看某端口连接情况
 ```
+
+ifconfig -a  查看本机ip
 
 lsof -i:8000  查看某端口
 
