@@ -185,6 +185,12 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 ```
 
+### 线程安全
+
+[Python 线程安全（同步锁Lock）详解 (biancheng.net)](http://c.biancheng.net/view/2617.html)
+
+[c++之多线程中“锁”的基本用法 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/91062516?utm_source=wechat_timeline)
+
 ## Python 配置
 
  py --list-paths 查看所有python版本
