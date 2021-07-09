@@ -8,6 +8,11 @@ https://www.jianshu.com/p/20f2186d9cbb
 
 ##### Linux工具
 
+```bash
+#打开内存监视器
+gnome-system-monitor
+```
+
 [https://github.com/linw7/Skill-Tree/blob/master/Linux%E5%B7%A5%E5%85%B7.md](https://github.com/linw7/Skill-Tree/blob/master/Linux工具.md)
 
 man +命令  查询命令使用
@@ -19,6 +24,8 @@ xinput	#查看输入
 xinput --disable 11	#关闭触摸板
 xinput --enable 11	#开启触摸板
 ```
+
+
 
 ## bash
 
@@ -85,6 +92,8 @@ lsof -i:8000  查看某端口
 kill -9 8000  关闭8000进程
 
 `chmod 777 file`  修改文件权限
+
+`chown  jiaqy  filename`   修改文件夹用户权限
 
 nmap 127.0.0.1    查看本地开放端口
 
@@ -154,7 +163,11 @@ iptables	控制端口
 ~/.bash_profile
 ~/.bashrc
 
+
+
 ## 快捷键
+
+Ubuntu 16 长按Win打开快捷键版帮助说明
 
 ```
 Tab  自动补全
@@ -165,6 +178,16 @@ Ctrl+u 删除此处至开始的所有内容
 Shift+Ctrl+C 复制
 Shift+Ctrl+V 粘贴
 CTRL + ALT + T 打开终端
+```
+
+文件管理器快捷键
+
+```
+Ctrl+L  显示路径
+Ctrl+H  显示隐藏文件
+Ctrl+D  当前位置保存书签
+Ctrl+B  查看所有书签
+Ctrl+N  打开新窗口
 ```
 
 

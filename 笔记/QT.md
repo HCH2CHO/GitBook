@@ -128,7 +128,7 @@ F4     头文件和源文件之间切换
 
 Ctrl+Space  自动补全（貌似会和输入法的切换冲突）我修改为Ctrl+Shit+Space
 
-Alt(按住)+ Enter  将在cpp中添加该函数的定义。
+Alt+ Enter  快速添加头文件
 
 Ctrl+Tab   上一个文件
 
@@ -138,11 +138,13 @@ Ctrl+L    跳转到某行
 
 Ctrl+/     注释行，取消注释行
 
-Ctrl+F
+Ctrl+F    查找
 
-Ctrl+Shift+F
+Ctrl+Shift+F    全项目查找
 
 Ctrl+,   Ctrl+.   切换书签
+
+
 
 F5        开始调试
 Shift+F5  停止调试

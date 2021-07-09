@@ -59,6 +59,16 @@ git commit -m 'update .gitignore'
 
 或删除已进入当前缓冲区的文件
 
+
+
+查找全部 .gitignore文件，避免存在多个.gitignore
+
+```
+find ./ -name "*.gitignore"
+```
+
+
+
 ### Linux
 
 ```
@@ -124,10 +134,6 @@ git reset --hard origin/planning
 ```
 
 
-
-git rebase -i HEAD~2   将本地的多次提交合并为一个，以简化提交历史。
-
-git rebase master 将master最新的分支同步到本地
 
 
 
@@ -246,7 +252,23 @@ git merge --no-ff ：git reset HEAD^ --hard回退时退到主分支
 
 **git  rebase**
 
-Git rebase 的中文名是变基，就是改变一次提交记录的base。可以使合并后的记录更简洁，问题搁置。
+git rebase 是分支变基，就是改变一次提交记录的base。可以使合并后的记录更简洁，问题搁置。
+
+```
+git rebase -i HEAD~2
+git rebase master
+```
+
+
+
+
+
+```bash
+# 将一个分支下的某一个提交（commit）合并到另外一个分支
+git cherry-pick <commitHash>
+```
+
+
 
 
 
