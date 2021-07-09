@@ -311,3 +311,11 @@ template是声明一个模板，typename是声明一个虚类型T，这个T可�
 ofstream  输入会将/n转换为/r/n，因此在读入/r/n后输出时会生成为/r/r/n
 
 [(1条消息) 使用ofstream输出数据时令人暴寒的错误！0A = 0D 0A？_weixin_33716941的博客-CSDN博客](https://blog.csdn.net/weixin_33716941/article/details/91816333)
+
+
+
+
+
+##### #include <iso646.h>
+
+引用iso646.h后，可以使用or not and 等符号代替 ||、  ! 、 && 这种反人类的逻辑语言，提高可读性。
